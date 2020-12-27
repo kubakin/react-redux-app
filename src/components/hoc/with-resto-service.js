@@ -3,11 +3,18 @@ import RestoServiceContext from '../resto-service-context';
 
 const WithRestoService = () => (Wrapped) => {
     return (props)=>{
-        const RestoService = useContext(RestoServiceContext);
+        // const RestoService = useContext(RestoServiceContext);
         return (
-            <Wrapped {...props} RestoService={RestoService}>
-
-            </Wrapped>
+            <RestoServiceContext.Consumer>
+                {
+                (RestoService)=> {
+                    return ( 
+                        <Wrapped {...props} RestoService={RestoService}>
+                        </Wrapped>
+                    )
+                }
+                }
+            </RestoServiceContext.Consumer>
         )
     }
 };
