@@ -9,7 +9,7 @@ import RestoServiceContext from './components/resto-service-context';
 import store from './store'
 import './index.scss';
 
-const restoService = new RestoService;
+const restoService = new RestoService();
 ReactDOM.render(
     <Provider store={store}>
         <ErrorBoundry>
