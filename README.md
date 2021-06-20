@@ -1,6 +1,7 @@
 # react-redux-app магазин еды
 <p>Приложение для ресторана</p>
 <p>Технологии: React, redux, react-router, scss</p>
+<p>ДЗ во время прохождения курса</p>
 <hr>
 <p>Страница со списком товаров</p>
 <img src='https://i.ibb.co/34XzPhF/2021-06-20-16-48-00.png'></img>
